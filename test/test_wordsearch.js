@@ -35,4 +35,20 @@ describe("#wordSearch()", function() {
 
     assert.isTrue(result);
   });
+
+  it("should return true if the word is present (vertical)", function() {
+    const result = wordSearch([
+      ['A', 'W', 'C', 'F', 'Q', 'U', 'A', 'L'],
+      ['S', 'E', 'I', 'N', 'U', 'E', 'L', 'D'],
+      ['Y', 'F', 'C', 'F', 'A', 'U', 'A', 'L'],
+      ['H', 'M', 'J', 'T', 'C', 'V', 'R', 'G'],
+      ['W', 'H', 'C', 'S', 'K', 'E', 'R', 'L'],
+      ['B', 'F', 'R', 'E', 'N', 'E', 'Y', 'B'],
+      ['U', 'B', 'T', 'W', 'A', 'P', 'A', 'I'],
+      ['O', 'D', 'C', 'A', 'K', 'U', 'A', 'S'],
+      ['E', 'Z', 'K', 'F', 'Q', 'U', 'A', 'L'],
+    ], 'QUACK')
+
+    assert.isTrue(result);
+  });
 });
